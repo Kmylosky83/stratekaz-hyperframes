@@ -1,0 +1,15 @@
+{
+  "name": "stratekaz-hyperframes",
+  "version": "0.1.0",
+  "description": "Workspace multipropósito de videos para StrateKaz",
+  "author": "Kmylosky83",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "domains": {
+    "marketing": "Videos para landing, redes sociales y campañas",
+    "compliance": "Explicativos de normativa colombiana (SG-SST, ISO 9001, ISO 14001, ISO 45001, PESV)",
+    "tutorials": "Guías y tutoriales del producto StrateKaz",
+    "reports": "Reportes en video personalizados por cliente"
+  }
+}

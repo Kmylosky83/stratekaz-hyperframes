@@ -1,0 +1,27 @@
+:root {
+  --sk-color-primary: #1a3a8f;
+  --sk-color-primary-light: #2952b3;
+  --sk-color-secondary: #f59e0b;
+  --sk-color-success: #10b981;
+  --sk-color-bg: #0f172a;
+  --sk-color-bg-soft: #1e293b;
+  --sk-color-fg: #f8fafc;
+  --sk-color-fg-muted: #94a3b8;
+
+  --sk-font-display: "Inter", "Segoe UI", system-ui, sans-serif;
+  --sk-font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --sk-font-mono: "JetBrains Mono", Consolas, monospace;
+
+  --sk-fz-xs: 24px;
+  --sk-fz-sm: 32px;
+  --sk-fz-md: 48px;
+  --sk-fz-lg: 72px;
+  --sk-fz-xl: 120px;
+
+  --sk-radius-sm: 8px;
+  --sk-radius-md: 16px;
+  --sk-radius-lg: 24px;
+
+  --sk-easing-default: cubic-bezier(0.22, 1, 0.36, 1);
+  --sk-easing-bounce: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}

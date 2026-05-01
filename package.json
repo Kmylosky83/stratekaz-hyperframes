@@ -1,0 +1,36 @@
+{
+  "name": "stratekaz-hyperframes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Workspace multipropósito de videos generados con HyperFrames (HeyGen) para el ecosistema StrateKaz: marketing, explicativos normativos, tutoriales y reportes.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "preview": "hyperframes preview",
+    "render": "hyperframes render",
+    "lint": "hyperframes lint",
+    "render:marketing": "hyperframes render --root compositions/marketing",
+    "render:compliance:sg-sst": "hyperframes render --root compositions/compliance/sg-sst",
+    "render:compliance:iso-9001": "hyperframes render --root compositions/compliance/iso-9001",
+    "render:compliance:pesv": "hyperframes render --root compositions/compliance/pesv",
+    "render:tutorials": "hyperframes render --root compositions/tutorials",
+    "render:reports": "hyperframes render --root compositions/reports"
+  },
+  "devDependencies": {
+    "hyperframes": "latest"
+  },
+  "keywords": [
+    "stratekaz",
+    "hyperframes",
+    "heygen",
+    "video",
+    "html-to-video",
+    "compliance",
+    "sg-sst",
+    "iso-9001",
+    "pesv"
+  ],
+  "license": "UNLICENSED"
+}
