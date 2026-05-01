@@ -19,11 +19,9 @@ Este repo es **independiente** del repo principal `stratekaz` y **se complementa
 
 ```
 stratekaz-hyperframes/
-├── compositions/         # Composiciones HTML por dominio
-│   ├── marketing/
-│   ├── compliance/
-│   ├── tutorials/
-│   └── reports/
+├── compositions/         # SOLO archivos .html (composiciones reales)
+│   └── marketing/
+│       └── intro.html    # ejemplo
 ├── shared/               # Recursos compartidos
 │   ├── styles/           # CSS base, design tokens StrateKaz
 │   ├── fonts/
@@ -31,13 +29,17 @@ stratekaz-hyperframes/
 │   ├── audio/
 │   └── components/       # Partials HTML reutilizables
 ├── data/                 # JSON de prueba para inyectar en plantillas
-├── outputs/              # Videos renderizados (gitignored)
 ├── docs/                 # Documentación interna
+│   ├── compositions-guide.md
+│   └── compliance-domains.md
+├── outputs/              # Videos renderizados (gitignored)
 ├── tests/                # Pruebas de composiciones
 ├── meta.json             # Metadata del workspace
 ├── index.html            # Composición demo raíz
 └── package.json
 ```
+
+> **Importante**: Las carpetas de dominio (`compliance/<norma>/`, `tutorials/`, `reports/`) se crean **solo cuando hay un HTML real** que poner adentro. El HyperFrames Studio lista todo lo que esté en `compositions/`, así que dejar carpetas vacías o archivos `.gitkeep`/`.md` ahí ensucia la sidebar. Documentación de dominios → `docs/compliance-domains.md`.
 
 ## Setup
 
@@ -65,15 +67,14 @@ npm run render:reports                # renderiza reportes
 
 ## Crear una composición nueva
 
-1. Elegir el dominio: `marketing/`, `compliance/<norma>/`, `tutorials/` o `reports/`.
-2. Crear el archivo `<nombre>.html` con la estructura mínima de HyperFrames:
-   - Elemento raíz con `data-composition-id`, `data-width`, `data-height`, `data-start`.
-   - Elementos animados con `class="clip"` y `data-start`, `data-duration`, `data-track-index`.
-   - Timeline GSAP (u otro adapter) en `window.__timelines`.
-3. Reutilizar tokens y assets desde `shared/`.
-4. Probar con `npm run preview`.
+Ver guía completa en [`docs/compositions-guide.md`](docs/compositions-guide.md).
 
-Ver `index.html` y `compositions/marketing/intro.html` como referencia.
+Resumen:
+1. Crear `compositions/<dominio>/<nombre>.html` con la estructura mínima HyperFrames.
+2. Reutilizar tokens y assets desde `shared/`.
+3. Probar con `npm run preview`.
+
+Referencias listas: [`index.html`](index.html) y [`compositions/marketing/intro.html`](compositions/marketing/intro.html).
 
 ## Stack
 

@@ -8,7 +8,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "preview": "hyperframes preview",
+    "preview": "hyperframes preview --port 3090",
     "render": "hyperframes render",
     "lint": "hyperframes lint",
     "render:marketing": "hyperframes render --root compositions/marketing",
